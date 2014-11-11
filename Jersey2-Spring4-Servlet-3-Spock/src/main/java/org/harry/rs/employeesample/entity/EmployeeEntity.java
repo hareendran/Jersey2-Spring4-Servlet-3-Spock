@@ -11,7 +11,7 @@ public class EmployeeEntity {
 
 
 
-    private Integer empId;
+    private Long empId;
     private String firstName;
     private String lastName;
     private String middleName;
@@ -88,12 +88,12 @@ public class EmployeeEntity {
     @Id
     @GeneratedValue(strategy = javax.persistence.GenerationType.IDENTITY)
     @Column(name = "emp_id", unique = true, nullable = false)
-    public Integer getEmpId() {
+    public Long getEmpId() {
 
         return empId;
     }
 
-    public void setEmpId(Integer empId) {
+    public void setEmpId(Long empId) {
         this.empId = empId;
     }
 }

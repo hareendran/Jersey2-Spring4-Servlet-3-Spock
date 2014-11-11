@@ -8,8 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -57,7 +55,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
     }
 
     @Override
-    public void delete(Integer id) {
+    public void delete(Long id) {
         LOGGER.debug("Deleting  The  {} employee",id);
         employeeRepository.delete(employeeRepository.findOne(Long.valueOf(id)));
     }

@@ -47,7 +47,7 @@ class WebServiceTest extends Specification {
         server?.shutdownNow()
     }
 
-    def "Query all Applicationwadl"() {
+    def "Query Application.wadl"() {
         when:
         String responseMsg = target.path("/application.wadl").request().get(String.class)
         then:

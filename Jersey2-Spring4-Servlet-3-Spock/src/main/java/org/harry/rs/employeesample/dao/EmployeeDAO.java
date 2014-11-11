@@ -1,7 +1,6 @@
 package org.harry.rs.employeesample.dao;
 
 import org.harry.rs.employeesample.entity.EmployeeEntity;
-import org.harry.rs.employeesample.model.Employee;
 
 import java.util.List;
 
@@ -15,5 +14,5 @@ public interface EmployeeDAO {
     public List<EmployeeEntity>  saveEmployees(List<EmployeeEntity> ems);
     public EmployeeEntity saveEmployee(EmployeeEntity em);
 
-    void delete(Integer id);
+    void delete(Long id);
 }

@@ -11,7 +11,7 @@ public class Employee {
     private String age;
     private Address mailingAddress;
 
-    private Integer Id;
+    private Long Id;
 
     @Override
     public String toString() {
@@ -23,11 +23,11 @@ public class Employee {
                 '}';
     }
 
-    public Integer getId() {
+    public Long getId() {
         return Id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         Id = id;
     }
 

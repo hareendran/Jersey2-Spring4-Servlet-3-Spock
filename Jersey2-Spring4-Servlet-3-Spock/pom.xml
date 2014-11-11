@@ -41,10 +41,23 @@
                 </dependencies>
             </plugin>
             <plugin>
+   	          <groupId>org.eclipse.jetty</groupId>
+   	          <artifactId>jetty-maven-plugin</artifactId>
+   	          <version>9.2.11.v20150529</version>
+              <configuration>
+                <jettyXml>src/main/resources/jetty.xml</jettyXml>
+            		<scanIntervalSeconds>10</scanIntervalSeconds>
+            		<webApp>
+            		     <contextPath>/abc</contextPath>
+            		</webApp>
+            	</configuration>
+            </plugin>
+
+            <!-- <plugin>
                 <groupId>org.mortbay.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>${jetty.version}</version>
-            </plugin>
+            </plugin> -->
 
         </plugins>
     </build>
